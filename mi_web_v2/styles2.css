@@ -1,0 +1,71 @@
+/* Estilo básico para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo del título principal */
+h1 {
+    font-size: 24px;
+}
+
+/* Estilo de los enlaces de navegación */
+.nav1 a, .nav2 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo de la sección principal */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo del enlace de volver al inicio */
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Estilo de la tabla de directores */
+.tab_dir {
+    border: 1px solid;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilo de las celdas de la tabla */
+.tab_dir th, .tab_dir td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilo de la imagen del director en la tabla */
+.tab_dir img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}

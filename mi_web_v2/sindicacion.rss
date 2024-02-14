@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss>
+    <channel>
+        <title>Pagina Roberto Pecurto</title>
+        <link>https://robertopecurto.github.io/</link>
+        <description>Encuentra una pelicula de acuerdo a tus gustos</description>
+        <item>
+            <title>Quentin Tarantino</title>
+            <link>https://robertopecurto.github.io/dir1_T.html</link>
+            <description>Nacido el 27 de marzo de 1963 en Knoxville, Tennessee, es un influyente director, guionista y productor de cine estadounidense. Su estilo distintivo se caracteriza por diálogos afilados, referencias pop-culturales y narrativas no lineales. Ganador de varios premios, incluyendo dos premios de la Academia, Tarantino ha dejado una marca indeleble en la industria cinematográfica.</description>
+        </item>
+        <item>
+            <title>Martin Scorsese</title>
+            <link>https://robertopecurto.github.io/dir2_S.html</link>
+            <description>Nacido en el barrio de Queens, Nueva York, el 17 de noviembre de 1942, es un director de cine de la vieja escuela que ha dejado una marca indeleble en la historia del cine. Con su estilo inconfundible y su pasión por contar historias auténticas, ha conquistado corazones y mentes en todo el mundo. Su influencia en el cine contemporáneo es enorme y sus películas son un testimonio perdurable de su genio creativo.</description>
+        </item>
+        <item>
+            <title>Christopher Nolan</title>
+            <link>https://robertopecurto.github.io/dir3_N.html</link>
+            <description>Nacido en Londres en 1970, Christopher Nolan se ha ganado el reconocimiento como un director de cine que desafía las convenciones y redefine los límites narrativos y visuales con cada una de sus películas, creando historias que no solo entretienen, sino que también hacen reflexionar al público sobre la complejidad del ser humano y el universo que nos rodea.</description>
+        </item>
+    </channel>
+</rss>
