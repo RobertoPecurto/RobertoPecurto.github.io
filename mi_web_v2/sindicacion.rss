@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss>
+<rss version="2.0">
     <channel>
         <title>Pagina Roberto Pecurto</title>
         <link>https://robertopecurto.github.io/</link>
         <description>Encuentra una pelicula de acuerdo a tus gustos</description>
+        <image>
+            <url>http://127.0.0.1:5500/mi_web_v2/files/tarantino.jpeg</url>
+            <title>Quentin Tarantino</title>
+            <link>https://robertopecurto.github.io/</link>
+        </image>
         <item>
             <title>Quentin Tarantino</title>
             <link>https://robertopecurto.github.io/dir1_T.html</link>
             <description>Nacido el 27 de marzo de 1963 en Knoxville, Tennessee, es un influyente director, guionista y productor de cine estadounidense. Su estilo distintivo se caracteriza por diálogos afilados, referencias pop-culturales y narrativas no lineales. Ganador de varios premios, incluyendo dos premios de la Academia, Tarantino ha dejado una marca indeleble en la industria cinematográfica.</description>
+            <pubDate>15-02-2024</pubDate>
         </item>
         <item>
             <title>Martin Scorsese</title>

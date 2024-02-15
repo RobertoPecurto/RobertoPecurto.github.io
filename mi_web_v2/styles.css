@@ -6,6 +6,8 @@ body {
     font-family: Arial, sans-serif;
     font-size: 17px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -68,7 +70,6 @@ table, th, td{
 
     .tab_dir div{
         padding: 1px;
-        background-color: #ff0000;
     }
 
     .tab_dir th{
@@ -119,8 +120,7 @@ table, th, td{
 footer {
     background-color: #333;
     color: white;
-    padding: 5px;
-    position: static;
+    width: 100%;
 }
 
 footer p {
