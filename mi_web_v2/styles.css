@@ -1,7 +1,6 @@
 /*GENERAL*/
 
 body {
-    padding: 5px;
     min-height: 100%;
     font-family: Arial, sans-serif;
     font-size: 17px;
@@ -15,47 +14,69 @@ img {
     height: 250px;
 }
 
-/*ENCABECADO*/
+/*CABEZERA*/
 
+header {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.fondo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fondo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.fondo p {
+    margin: 0;
+    font-size: 14px;
+}
 
 /*NAVEGADORES*/
 
-nav {
-    margin-top: 5px;
+.navegadores {
+    display: flex;
+    justify-content: center;
+}
+
+.nav1 {
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+}
+
+.nav2 {
+    background-color: #333;
+    padding: 10px 20px;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #2b2b2b;
 }
 
 nav li {
-    float: left;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 nav a {
-    display: block;
     color: white;
-    text-align: center;
     text-decoration: none;
 }
 
 nav a:hover {
-    background-color: black;
-    color: aquamarine;
+    color: #990000;
 }
 
-nav.nav1 a {
-    padding: 15px;
-}
-
-nav.nav2 a {
-    padding: 14px 16px;
-}
 
 /*TABLAS*/
 
@@ -83,7 +104,7 @@ table, th, td{
     }
 
     .tab_dir a:hover{
-        color: aquamarine;
+        color: #990000;
     }
 
     .tab_dir td{
@@ -103,16 +124,38 @@ table, th, td{
         width: 100%;
     }
 
+    
+
 /*PLATAFORMAS*/
 
+.plataformas {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.plataformas h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.plataformas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.plataformas li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
 .plataformas a {
+    color: #333;
     text-decoration: none;
-    color: rgb(0, 0, 0);   
-    padding: 15px;
 }
 
 .plataformas a:hover {
-    color: aquamarine;
+    color: #990000;
 }
 
 /*FOOTER*/
@@ -133,7 +176,7 @@ footer a {
 }
 
 footer a:hover{
-    color: aquamarine;
+    color: #990000;
 }
 
 footer p img{
