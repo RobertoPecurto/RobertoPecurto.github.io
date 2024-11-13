@@ -8,47 +8,51 @@
 </head>
 <body>
 
-    <!-- Cabecera -->
+    <!-- Header -->
     <header id="header">
-        <div class="logo-container">
-            <img src="multimedia/img/logo.png" alt="CarCast's logo">
-        </div>
-        <div class="main-nav">
-            <nav>
-                <ul>
+
+        <!-- Navbar -->
+        <nav>
+            <div class="navbar-container">
+
+                <!-- Logo -->
+                <div class="logo-container">
+                    <img src="multimedia/img/logo.png" alt="CarCast's logo">
+                </div>
+
+                <!-- Navbar Links -->
+                <ul class="navbar-links">
                     <li><a href="#home">Inicio</a></li>
                     <li><a href="#about">Sobre Nosotros</a></li>
                     <li class="dropdown">
                         <a href="javascript:void(0);" id="services-link">Servicios</a>
                         <div class="dropdown-content">
-                            <a href="#">Opción 1</a>
+                            <a href="pages/contact.html">Opción 1</a>
                             <a href="#">Opción 2</a>
                             <a href="#">Opción 3</a>
                         </div>
                     </li>
                     <li><a href="pages/contact.html">Contacto</a></li>
                 </ul>
-            </nav>
-        </div>
-        <div class="auth-links">
-            <ul>
-                <li><a href="#">Log in</a></li>
-                <li><a href="#">Sign up</a></li>
-            </ul>
-        </div>
+
+                <!-- Session links-->
+                <ul class="auth-links">
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <!-- Contenido principal y barra lateral -->
+    <!-- Main content -->
     <main>
         <div class="container">
+
+            <!-- Content -->
             <section class="content">
                 <h2>Bienvenidos</h2>
                 <p>Esta es una plantilla básica de HTML y CSS para ayudarte a empezar.</p>
             </section>
-            <aside class="aside-dropdown">
-                <h3>Noticias Recientes</h3>
-                <p>Aquí puedes agregar enlaces a tus últimas noticias o artículos.</p>
-            </aside>
         </div>
     </main>
 
