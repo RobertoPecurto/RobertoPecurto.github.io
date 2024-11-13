@@ -1,0 +1,88 @@
+/* Style reset */
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+/* General styles */
+
+    body {
+        background-color: #dfdfdf;
+    }
+
+    .black {
+        background-color: #161616;
+    }
+
+/* Header */
+
+    /*Logo */
+
+    .logo {
+        margin-right: 25px;
+        padding-right: 25px;
+        border-right: 1px solid #494949;
+    }
+
+    /* Navbar */
+
+    #navbar {
+        background-color: #000000;
+    }
+
+    #navbar * {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #navbar a {
+        color: #494949;
+        font-weight: bold;
+    }
+
+    #nav-links {
+        padding-left: 15px;
+    }
+
+/* Main */
+
+    /* Welcome */
+
+    #main-welcome {
+        background-color: #0e0e0e;
+        color: white;
+        margin-top: 0;
+    }
+    
+
+    /* Games selector */
+
+    #games-welcome {
+        background-color: #636363;
+        margin-bottom: 15px;
+    }
+
+    /* Search */
+
+    
+
+
+/* Footer */
+
+
+/* Media queries */
+
+@media (max-width: 800px) {
+
+    /* Small screen Welcome */
+
+    #main-welcome {
+        width: 100%;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}
+
+    
