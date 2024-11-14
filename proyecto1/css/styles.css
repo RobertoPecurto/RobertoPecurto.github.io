@@ -1,149 +1,87 @@
-/* Reset de estilos */
+/* Style reset */
+
     * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
 
-/* Estilo del cuerpo */
+/* General styles */
+
+    .my-bg-black {
+        background-color: #1D1D1D;
+    }
+
+    .my-bg-grey {
+        background-color: #2f2f2f;
+    }
+
+    .bg-blue {
+        background-color: #004ACB;
+    }
+
+    .bg-light-blue {
+        background-color: #2272FF;
+    }
+
+    .text-blue {
+        color: #004ACB;
+    }
+    
+    .text-light-blue {
+    color: #2272FF;
+    }
+
+/* Body */
+
     body {
-    font-family: Arial, sans-serif;
-    line-height: 1.7;
-    color: #333;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+        background-color: #d1d1d1;
     }
 
-/* Estilos para el header */
-    header {
-    display: flex;
-    width: 100%;
-    background: #1f1f1f;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    box-shadow:  0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-    }
+/* Header */
 
-    /* Estilos para el logo */
-        .logo-container img {
-            height: 50px;
-            margin: 0px 40px;
+    /*Logo */
+
+
+    /* Navbar */
+
+        #navbar {
+            background-color: #111;
+        }
+        #navbar a {
+            color: #b3b3b3;
+        }
+        #navbar a:hover {
+            color: #ff0;
         }
 
-    /* Estilo del contenedor de navegación */
-        .navbar-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
+/* Main */
+
+    /* Welcome */
+
+
+    /* Cards */
+
+        .card {
+            background-color: #8b8b8b;
+            border: 1px solid #7c7c7c;
         }
 
-        /* Navbar links */
-        .navbar-links {
-            display: flex;
-            list-style: none;
-            padding-left: 0;
-            margin: 0;
-        }
-
-        .navbar-links li {
-            padding: 15px 20px;
-        }
-
-        .navbar-links a {
-            text-decoration: none;
-            color: #ffffff;
-        }
-
-        /* Dropdown */
-            .dropdown {
-            position: relative;
-            }
-
-            .dropdown-content {
-            display: none; /* Oculto por defecto */
-            position: absolute;
-            top: 100%; /* Aparece justo debajo del <li> */
-            left: 0;
-            background-color: #333;
-            min-width: 160px;
-            z-index: 1;
-            background-image: url("../multimedia/img/texture.jpg"); /* Imagen de fondo */
-            background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-            background-position: center; /* Centra la imagen dentro del contenedor */
-            background-repeat: no-repeat; /* No repetir la imagen */
-            border-radius: 10px; /* Bordes redondeados */
-            }
-
-            /* Los enlaces dentro del dropdown */
-                .dropdown-content a {
-                color: white;
-                padding: 10px 10px;
-                text-decoration: none;
-                display: block;
-                }
-
-                /* Efecto hover para los enlaces */
-                    .dropdown-content a:hover {
-                    background-color: rgba(70,70,70,0.459); /* Fondo semitransparente al pasar el ratón */
-                    border-radius: 8px; /* Bordes redondeados */
-                    }
-
-                /* Mostrar el dropdown al pasar el ratón sobre el li */
-                    .dropdown:hover .dropdown-content {
-                    display: block;
-                    }
-
-            /* Authentication links */
-                .auth-links {
-                    display: flex;
-                    flex-wrap: wrap;
-                    list-style: none;
-                    margin-left: auto;
-                }
-
-                .auth-links li {
-                    width: 100%;
-                    flex-basis: 0;
-                    flex-grow: 1;
-                    text-align: center;
-                }
-
-                .auth-links a {
-                    display: block;
-                    text-decoration: none;
-                    color: #ffffff;
-                }
-
-/* Main content */
-    main {
-    display: flex;
-    padding: 20px;
-    margin-top: 70px; /* Ajuste para que no se superponga con el header fijo */
-    }
-
-    /* Left container */
-        .sidebar {
-        padding: 20px;
-        background: #ddd;
-        margin-right: 20px;
-        }
-
-    /* Right container */
-        .content {
-        padding: 20px;
-        background: #fff;
+        .card-title {
+        color: #9b4d96;
         }
 
 /* Footer */
+
     footer {
-    text-align: center;
-    padding: 30px 10px;
-    background: #333;
-    color: #eeeeee;
-    margin-top: 20px;
+    background-color: #111;
+    color: #b3b3b3;
+    }
+
+    footer a {
+    color: #ff0;
+    }
+
+    footer a:hover {
+    color: #9b4d96;
     }
