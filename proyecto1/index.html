@@ -5,117 +5,53 @@
     <meta name="Tracker project" content="JDM Tuning Mechanics - Experts in customizing and upgrading Japanese cars" />
     <meta name="robots" content="index,follow" />
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/stylesB.css">
-    <title>JDM Tuning Mechanics</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>JDM Tuning Mechanic - Index</title>
   </head>
 
-  <body class="d-flex flex-column min-vh-100">
+  <body class="d-flex flex-column min-vh-100 my-bg-black text-white">
 
     <!-- Header -->
-    <header>
+    <header class="mb-5 p-3">
       <!-- Navbar -->
-      <nav id="navbar" class="navbar navbar-expand-lg shadow-sm fw-bold my-bg-black">
-        <div id="nav-container" class="container d-flex justify-content-between align-items-center">
-          
-          <!-- Logo -->
-          <div class="navbar-brand">
-            <img src="multimedia/img/logo.png" alt="JDM Tuning Logo" class="img-fluid" style="height: 40px; color: white;">
-          </div>
-          
-          <!-- Navbar Links and Session Links inside a single div for better layout control -->
-          <div id="navbarContent" class="d-flex justify-content-between align-items-center w-100">
-            <ul id="nav-links" class="navbar-nav me-auto d-flex flex-row">
-              <li class="nav-item"><a href="pages/services.html" class="nav-link px-3">Our Services</a></li>
-              <li class="nav-item"><a href="pages/projects.html" class="nav-link px-3">Projects</a></li>
-              <li class="nav-item"><a href="pages/about.html" class="nav-link px-3">About Us</a></li>
-              <li class="nav-item"><a href="pages/contact.html" class="nav-link px-3">Contact</a></li>
-            </ul>
-
-            <!-- Session Links -->
-            <ul class="navbar-nav ms-auto d-flex flex-row">
-              <li class="nav-item"><a href="#" class="nav-link px-3">Login</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-3">Sign up</a></li>
-            </ul>
-          </div>
+      <nav id="main-navbar" class="navbar navbar-expand-lg shadow-sm fw-bold">
+        <div class="container d-flex justify-content-between align-items-center">
+          <!-- Navbar Links -->
+          <ul class="navbar-nav d-flex flex-row w-100 justify-content-between mojita">
+            <li class="nav-item"><a href="pages/services.html" class="nav-link px-3">OUR SERVICES</a></li>
+            <li class="nav-item"><a href="pages/projects.html" class="nav-link px-3">PROJECTS</a></li>
+            <li class="nav-item"><a href="pages/about.html" class="nav-link px-3">ABOUT US</a></li>
+            <li class="nav-item"><a href="pages/contact.html" class="nav-link px-3">CONTACT</a></li>
+          </ul>
         </div>
       </nav>
     </header>
 
+
     <!-- Main Content -->
-    <main class="container my-5">
+    <main class="container-fluid my-5">
+
       <!-- Welcome section -->
       <section id="welcome" class="text-center mb-5">
-        <h1>Welcome to JDM Tuning Mechanics</h1>
-        <p class="lead">Your destination for high-performance JDM tuning and custom upgrades.</p>
+        <h1 class="kasukagi"><span class="color-red">JDM</span> Tuning Mechanic</h1>
+        <p class="lead fw-bold">Engineered for Speed, Tuned for Perfection.</p>
       </section>
 
-      <!-- Our Services -->
-      <section id="services" class="mb-5">
-        <h2 class="mb-3">Our Services</h2>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="multimedia/img/motor.jpg" class="card-img-top" alt="Engine Upgrade">
-              <div class="card-body">
-                <h5 class="card-title">Engine Upgrades</h5>
-                <p class="card-text">From turbochargers to ECU remapping, we enhance your engine's performance to the max.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="multimedia/img/bodyKit.jpg" class="card-img-top" alt="Body Kits">
-              <div class="card-body">
-                <h5 class="card-title">Custom Body Kits</h5>
-                <p class="card-text">Aggressive, sleek, or functional body kits tailored to your JDM car’s style and performance needs.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="multimedia/img/suspension.jpg" class="card-img-top" alt="Suspension Tuning">
-              <div class="card-body">
-                <h5 class="card-title">Suspension Tuning</h5>
-                <p class="card-text">Experience optimal handling and ride quality with our expertly tuned suspension setups.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section id="projects" class="mb-5">
-        <h2 class="mb-3">Our Projects</h2>
-        <div class="row">
-          <div class="col-md-6 ">
-            <div class="p-4 my-bg-black text-white rounded">
-              <h4>Featured Build: Nissan Skyline GT-R</h4>
-              <p>A full transformation with custom turbo, forged internals, and a body kit that turns heads at every meet.</p>
-              <img src="multimedia/img/nissanGTR.jpg" class="img-fluid rounded w-100" alt="Nissan Skyline GT-R">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="p-4 my-bg-black text-white rounded">
-              <h4>Toyota Supra MKIV</h4>
-              <p>700 HP monster with a custom widebody kit and a state-of-the-art tuning setup.</p>
-              <img src="multimedia/img/supraMK4.jpg" class="img-fluid rounded w-100 pt-5 pb-5" alt="Toyota Supra MKIV">
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
-        <!-- About Us Section -->
-        <section id="about" class="mb-5 container">
-          <h2>About Us</h2>
-          <p>JDM Tuning Mechanics was founded by car enthusiasts for car enthusiasts. We are passionate about Japanese performance cars and dedicated to bringing out the best in every build.</p>
-        </section>
-
-    <!-- Footer -->
-    <footer class="text-white text-center py-3 mt-auto my-bg-black">
-      <p class="mb-0">&copy; 2024 JDM Tuning Mechanics. All rights reserved. Follow us on <a href="#" class="text-white">Instagram</a> and <a href="#" class="text-white">Facebook</a>.</p>
+    <footer>
+      <!-- Session Links -->
+      <nav id="session-navbar" class="navbar navbar-expand-lg shadow-sm fw-bold fixed-bottom kasukagi p-4">
+        <div class="container d-flex justify-content-between align-items-center">
+          <ul class="navbar-nav fs-3 d-flex flex-row w-100 justify-content-between">
+            <li class="nav-item"><a href="#" class="nav-link px-3 letter-spacing">LOG IN</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-3 letter-spacing">SIGN UP</a></li>
+          </ul>
+        </div>
+      </nav>
     </footer>
 
     <script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/indexScript.js"></script>
   </body>
 </html>
