@@ -4,6 +4,12 @@
 
         // Set focus on first input
         document.getElementById('inputName').focus();
+
+        const mainNav = document.getElementById('main-navbar');
+
+        setTimeout(function () {
+            mainNav.classList.add('show')
+        }, 500)
     }
 
     // Contact form
@@ -11,11 +17,11 @@
     document.getElementById('reset').addEventListener('click', function () {
         const name = document.getElementById('inputName');
         const email = document.getElementById('inputEmail');
-        const mesage = document.getElementById('inputMessage');
+        const message = document.getElementById('inputMessage');
 
         name.value = '';
         email.value = '';
-        mesage.value = '';
+        message.value = '';
 
         document.getElementById('inputName').focus();
 
