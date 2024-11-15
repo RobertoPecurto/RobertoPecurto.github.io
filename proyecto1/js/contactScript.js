@@ -7,9 +7,11 @@
 
         const mainNav = document.getElementById('main-navbar');
 
-        setTimeout(function () {
-            mainNav.classList.add('show')
-        }, 500)
+        if (mainNav) {
+            setTimeout(function () {
+                mainNav.classList.add('show')
+            }, 500)
+        }
     }
 
     // Contact form
@@ -32,7 +34,7 @@
     })
 
     document.getElementById('submit').addEventListener('click', function (event) {
-        // Prevent form sent
+        // Prevent from send
         event.preventDefault();
 
         const name = document.getElementById('inputName').value;
