@@ -7,6 +7,7 @@
 
         const mainNav = document.getElementById('main-navbar');
 
+        // Show navbar
         if (mainNav) {
             setTimeout(function () {
                 mainNav.classList.add('show')
@@ -21,12 +22,15 @@
         const email = document.getElementById('inputEmail');
         const message = document.getElementById('inputMessage');
 
+        // Reset fields
         name.value = '';
         email.value = '';
         message.value = '';
 
+        // Focus on first input
         document.getElementById('inputName').focus();
 
+        // Hide alert
         const alertBox = document.getElementById('custom-alert');
         alertBox.classList.remove('show');
         alertBox.classList.add('hidden');
