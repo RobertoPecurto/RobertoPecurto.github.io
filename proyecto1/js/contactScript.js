@@ -48,9 +48,18 @@
         let isValid = true;
 
         // Validate if fields are empty
-        if (name === '' || email === '' || message === '') {
+        if (name === '') {
             showAlert('Please fill in all fields.')
             isValid = false;
+            document.getElementById('inputName').focus();
+        } else if (email === '') {
+            showAlert('Please fill in all fields.')
+            isValid = false;
+            document.getElementById('inputEmail').focus();
+        } else if (message === '') {
+            showAlert('Please fill in all fields.')
+            isValid = false;
+            document.getElementById('inputMessage').focus();
         }
 
         // Validate email format

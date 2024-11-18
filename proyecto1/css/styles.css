@@ -90,11 +90,12 @@
 
         /* Main navbar*/
 
-            #main-navbar a {
+            #main-navbar .nav-link {
                 color: #fff;
+                transition: color 0.5s;
             }
 
-            #main-navbar a:hover {
+            #main-navbar .nav-link:hover {
                 color: #CE0000;
             }
 
@@ -212,7 +213,7 @@
             }
 
             #inputMessage {
-                resize: vertical;
+                resize: none;
                 min-height: 100px;
             }
 
@@ -318,6 +319,7 @@
 
         #session-navbar a:hover {
             color: #CE0000;
+            transition: color 0.5s;
         }
 
     /* Animación footer (session-navbar) */
