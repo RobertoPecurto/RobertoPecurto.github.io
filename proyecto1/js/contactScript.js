@@ -17,6 +17,8 @@
 
     // Contact form
 
+
+    // Reset form
     document.getElementById('reset').addEventListener('click', function () {
         const name = document.getElementById('inputName');
         const email = document.getElementById('inputEmail');
@@ -35,48 +37,6 @@
         alertBox.classList.remove('show');
         alertBox.classList.add('hidden');
 
-    })
-
-    document.getElementById('submit').addEventListener('click', function (event) {
-        // Prevent from send
-        event.preventDefault();
-
-        const name = document.getElementById('inputName').value;
-        const email = document.getElementById('inputEmail').value;
-        const message = document.getElementById('inputMessage').value;
-
-        let isValid = true;
-
-        // Validate if fields are empty
-        if (name === '') {
-            showAlert('Please fill in all fields.')
-            isValid = false;
-            document.getElementById('inputName').focus();
-        } else if (email === '') {
-            showAlert('Please fill in all fields.')
-            isValid = false;
-            document.getElementById('inputEmail').focus();
-        } else if (message === '') {
-            showAlert('Please fill in all fields.')
-            isValid = false;
-            document.getElementById('inputMessage').focus();
-        }
-
-        // Validate email format
-        const emailPattern = /^[^@]+@[^@]+$/;
-
-        if (email !== '' && !emailPattern.test(email)) {
-            showAlert('Please enter a valid email address.');
-            document.getElementById('inputEmail').focus();
-            document.getElementById('inputEmail').value = ''
-            isValid = false;
-        }
-
-        if (isValid) {
-            showAlert('Message sent, thank you.',true);
-        }
-
-        return isValid;
     })
 
     // Show custom alert
@@ -106,4 +66,58 @@
         }, 5000);
     }
 
-    
+    function validateName(name) {
+        const namePattern = /^[A-Z][a-z]{1,}([ ][A-Z][a-z]{1,})*$/;
+        return namePattern.test(name);
+    }
+
+    function validateEmail(email) {
+        const emailPattern = /^[^@.\s][^@\s]*[^@.\s]@[a-zA-Z0-9.]+\.[a-zA-Z]{2,}$/;
+        return namePattern.test(email)
+    }
+
+    // Submit form
+    document.getElementById('submit').addEventListener('click', function (event) {
+        // Prevent from send
+        event.preventDefault();
+
+        const name = document.getElementById('inputName');
+        const email = document.getElementById('inputEmail');
+        const message = document.getElementById('inputMessage');
+
+        let isValid = true;
+
+        // Validate if fields are empty
+        if (name.value === '') {
+            showAlert('Please fill in all fields.')
+            isValid = false;
+            name.focus();
+            stop();
+        } else if (email.value === '') {
+            showAlert('Please fill in all fields.')
+            isValid = false;
+            email.focus();
+        } else if (message.value === '') {
+            showAlert('Please fill in all fields.')
+            isValid = false;
+            message.focus();
+        } else {
+            if (!validateName(name.value)) {
+                showAlert('Please enter a valid name.');
+                name.focus();
+                name.value = '';
+                isValid = false;
+            } else if (!validateEmail(email.value)) {
+                showAlert('Please enter a valid email.');
+                email.focus();
+                email.value = '';
+                isValid = false;
+            }
+        }
+
+        if (isValid) {
+            showAlert('Message sent, thank you.',true);
+        }
+
+        return isValid;
+    })

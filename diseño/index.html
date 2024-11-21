@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Tracker project</title>
   </head>
-  <body class="d-flex flex-column">
+  <body class="d-flex flex-column min-vh-100 my-bg-grey text-white">
 
     <!-- Header -->
-    <header>
+    <header class="my-bg-black">
 
       <!-- Navbar -->
-      <nav id="navbar" class="shadow-sm">
-        <div id="nav-container" class="container d-flex d-inline-flex align-items-center justify-content-between">
-          
+      <nav id="navbar" class="navbar navbar-expand-lg shadow-sm fw-bold">
+        <div id="nav-container" class="container d-flex justify-content-between align-items-center">
+
           <!-- Logo -->
           <div class="logo-container">
-            <img src="multimedia/img/logo.png" alt="Logo" class="img-fluid" style="height: 40px;">
+            <a href="/diseño/index.html"><img src="/diseño/multimedia/img/logo.png" alt="Logo" class="img-fluid" style="height: 40px;">
+            </a>
           </div>
           
           <!-- Navbar Links -->
-          <ul id="nav-links" class="nav me-auto">
-            <li class="nav-item d-flex"><img src="/multimedia/img/overwatch-logo.png" alt="Overwatch logo" href="pages/overwatch.html"><a href="pages/overwatch.html" class="nav-link link-body-emphasis">Overwatch</a></li>
-            <li class="nav-item d-flex"><img src="/multimedia/img/overwatch-logo.png" alt="Overwatch logo" href="pages/overwatch.html"><a href="pages/overwatch.html" class="nav-link link-body-emphasis">Overwatch</a></li>
-            <li class="nav-item d-flex"><img src="/multimedia/img/overwatch-logo.png" alt="Overwatch logo" href="pages/overwatch.html"><a href="pages/overwatch.html" class="nav-link link-body-emphasis">Overwatch</a></li>
+          <ul id="nav-links" class="navbar-nav d-flex flex-row w-100 justify-content-between me-auto">
+            <li class="nav-item d-flex"><a href="/diseño/pages/overwatch.html" class="nav-link link-body-emphasis"><img src="/multimedia/img/overwatch-logo.png" alt="Overwatch logo">Overwatch</a></li>
+            <li class="nav-item d-flex"><a href="/diseño/pages/lol.html" class="nav-link link-body-emphasis"><img src="/multimedia/img/lol-logo.png" alt="League of Legends logo">League of Legends</a></li>
           </ul>
 
           <!-- Session Links -->
@@ -34,7 +34,6 @@
             <li class="nav-item"><a href="#" class="nav-link link-body-emphasis">Sign in</a></li>
             <li class="nav-item"><a href="#" class="nav-link link-body-emphasis">Sign up</a></li>
           </ul>
-
         </div>
       </nav>
 

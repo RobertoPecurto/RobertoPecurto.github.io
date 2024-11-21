@@ -79,13 +79,14 @@
             cursor: url('/proyecto1/multimedia/img/cursor.png'), default;
         }
 
-        a, button {
+        a, button, input[type="button"] {
             cursor: url('/proyecto1/multimedia/img/click-cursor.png'), pointer;
         }
 
         input[type="text"], input[type="email"], textarea {
             cursor: url('/proyecto1/multimedia/img/text-cursor.png'), text;
         }
+    
     /* Navbar */
 
         /* Main navbar*/
