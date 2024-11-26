@@ -8,85 +8,113 @@
     <link rel="stylesheet" href="/diseño/css/styles.css">
     <title>Tracker project</title>
   </head>
-  <body class="d-flex flex-column min-vh-100 my-bg-grey text-white">
+  <body class="d-flex flex-column min-vh-100 bg-black text-white">
 
     <!-- Header -->
-    <header class="my-bg-black">
-
-      <!-- Navbar -->
-      <nav id="navbar" class="navbar navbar-expand-lg shadow-sm fw-bold">
-        <div id="nav-container" class="container d-flex justify-content-between align-items-center">
-
+    <header class="bg-black">
+      <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
           <!-- Logo -->
-          <div class="logo-container">
-            <a class="text-grey" href="/diseño/index.html"><img src="/diseño/multimedia/img/logo.png" alt="Logo" class="img-fluid" style="height: 40px;"></a>
-          </div>
+          <a class="navbar-brand fw-bold text-uppercase" href="/diseño/index.html">
+            <span class="text-danger">Tracker</span> Project
+          </a>
+
+
           
-          <!-- Navbar Links -->
-          <ul id="nav-links" class="navbar-nav d-flex flex-row w-100 justify-content-between me-auto">
-            <li class="nav-item d-flex"><a href="/diseño/pages/overwatch.html" class="nav-link link-body-emphasis text-grey"><img src="/multimedia/img/overwatch-logo.png" alt="Overwatch logo">Overwatch</a></li>
-            <li class="nav-item d-flex"><a href="/diseño/pages/lol.html" class="nav-link link-body-emphasis text-grey"><img src="/multimedia/img/lol-logo.png" alt="League of Legends logo">League of Legends</a></li>
-          </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-          <!-- Session Links -->
-          <ul class="nav ms-auto">
-            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis text-grey">Sign in</a></li>
-            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis text-grey">Sign up</a></li>
-          </ul>
-        </div>
-      </nav>
+          <div class="collapse navbar-collapse">
+            <!-- Navbar Links -->
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item d-flex">
+                <a href="/diseño/pages/overwatch.html" class="nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="trn-game-bar-dropdown-item__icon">
+                    <path d="M5.6 2a.46.46 0 0 0-.4.5.37.37 0 0 0 .1.3l1.3 1.7v15.2l-1.7 1.7a.377.377 0 0 0 .1.6h13.4a.76.76 0 0 0 .4-.2l2.3-2.3a.377.377 0 0 0-.1-.6.37.37 0 0 0-.3-.1h-9.5V2.5a.472.472 0 0 0-.5-.5ZM12 3.8v.9a8.237 8.237 0 0 1 8.2 8.2 7.96 7.96 0 0 1-1.7 5h1.1a8.9 8.9 0 0 0 1.5-5A9.133 9.133 0 0 0 12 3.8m0 1.8v12.3h5.3a7.48 7.48 0 0 0 2-5A7.34 7.34 0 0 0 12 5.6m-6.4.8a9.52 9.52 0 0 0-2.7 6v1.3a9.27 9.27 0 0 0 2.7 5.7V18a8.15 8.15 0 0 1-1.8-5.1 7.75 7.75 0 0 1 1.8-5.1zm0 3a7.3 7.3 0 0 0-.9 3.5 6.76 6.76 0 0 0 .9 3.5z"></path>
+                  </svg>                
+                  <span>Overwatch</span>
+                </a>
+              </li>
+              <li class="nav-item d-flex">
+                <a href="/diseño/pages/lol.html" class="nav-link">
+                  
+                  <span>League of Legends</span>
+                </a>
+              </li>
+            </ul>
 
+            <!-- Session Links -->
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a href="#" class="nav-link">Sign in</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Log in</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <div class="container-fluid p-0">
+    <main class="p">
+      <div class="container">
         <div class="row">
-          <!-- Welcome continer -->
-          <div id="main-welcome" class="col-12 col-lg-3 d-flex flex-column vh-lg-100 p-4">
-            <div class="p-4">
-              <h4>Welcome</h4>
-              <p>This is a tracker about different games, you can find here the information about the games, the players, the teams, the matches, the players stats, etc.</p>
-            </div>
+          <!-- Welcome section -->
+          <div id="welcome-section" class="col-md-6 my-bg-grey">
+            <h4 class="fw-bold text-uppercase">Welcome</h4>
+            <p class="lead">This is a tracker about different games, you can find here the information about the games, the players, the teams, the matches, the players stats, etc.</p>
           </div>
 
-          <!-- All games continer -->
-          <div class="col my-bg-black">
+          <!-- Games section -->
+          <div id="games-section" class="col-sm-12 col-md-6">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h2 class="text-uppercase">All games</h2>
 
-            <div class="p-4">
-              <p>ALL GAMES:</p>
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item d-flex">
+                    <a href="" class="nav-link">
+                      Overwatch
+                    </a>
+                  </li>
+                  <li class="nav-item d-flex">
+                    <a href="" class="nav-link">
+                      League of Legends
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <!-- Game cards -->
-            <div class="row g-4 p-4">
-
-              <div class="col-4 col-md-3 col-lg-2" >
-                <a href="pages/overwatch.html" class="text-decoration-none">
-                  <div class="card shadow-sm h-100 my">
+            <div class="row">
+              <!-- Game cards -->
+              <div class="col-3 col-sm-4 col-md-3 col-lg-3">
+                <a href="/diseño/pages/overwatch.html" class="text-decoration-none">
+                  <div class="card bg-black">
                     <img src="/diseño/multimedia/img/overwatch.png" class="card-img-top" alt="Card image cap">
-                    <div class="card-body d-flex flex-column">
-                      <p class="card-text">Overwatch</p>
+                    <div class="card-body text-center">
+                      <p class="card-title text-white">Overwatch</p>
                     </div>
                   </div>
                 </a>
               </div>
 
-              <div class="col-4 col-md-3 col-lg-2" >
-                <a href="pages/lol.html" class="text-decoration-none">
-                  <div class="card shadow-sm h-100">
+              <div class="col-3 col-sm-4 col-md-3 col-lg-3">
+                <a href="/diseño/pages/lol.html" class="text-decoration-none">
+                  <div class="card bg-black">
                     <img src="/diseño/multimedia/img/league-of-legends.png" class="card-img-top" alt="Card image cap">
-                    <div class="card-body d-flex flex-column">
-                      <p class="card-text">League of legends</p>
+                    <div class="card-body text-center">
+                      <p class="card-title text-white">League of Legends</p>
                     </div>
                   </div>
                 </a>
               </div>
               
-              <div class="col-4 col-md-3 col-lg-2" >
-                <a href="pages/overwatch.html" class="text-decoration-none">
-                  <div class="card shadow-sm h-100">
-                    <img src="/diseño/multimedia/img/overwatch.png" class="card-img-top" alt="Card image cap">
-                    <div class="card-body d-flex flex-column">
-                      <p class="card-text">Overwatch</p>
+              <div class="col-3 col-sm-4 col-md-3 col-lg-3">
+                <a href="/diseño/pages/lol.html" class="text-decoration-none">
+                  <div class="card bg-black">
+                    <img src="/diseño/multimedia/img/league-of-legends.png" class="card-img-top" alt="Card image cap">
+                    <div class="card-body text-center">
+                      <p class="card-title text-white">League of Legends</p>
                     </div>
                   </div>
                 </a>

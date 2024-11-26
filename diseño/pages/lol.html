@@ -11,32 +11,45 @@
   <body class="d-flex flex-column min-vh-100 my-bg-grey text-white">
 
     <!-- Header -->
-    <header class="my-bg-black">
-
-      <!-- Navbar -->
-      <nav id="navbar" class="navbar navbar-expand-lg shadow-sm fw-bold">
-        <div id="nav-container" class="container d-flex justify-content-between align-items-center">
-
+    <header class="bg-black">
+      <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
           <!-- Logo -->
-          <div class="logo-container">
-            <a href="/diseño/index.html"><img src="/diseño/multimedia/img/logo.png" alt="Logo" class="img-fluid" style="height: 40px;">
-            </a>
-          </div>
+          <a class="navbar-brand fw-bold text-uppercase" href="/diseño/index.html">
+            <span class="text-danger">Tracker</span> Project
+          </a>
           
-          <!-- Navbar Links -->
-          <ul id="nav-links" class="navbar-nav d-flex flex-row w-100 me-auto p-0">
-            <li class="nav-item d-flex"><a href="/diseño/pages/overwatch.html" class="nav-link link-body-emphasis"><img src="/multimedia/img/overwatch-logo.png" alt="Overwatch logo">Overwatch</a></li>
-            <li class="nav-item d-flex"><a href="/diseño/pages/lol.html" class="nav-link link-body-emphasis"><img src="/multimedia/img/lol-logo.png" alt="League of Legends logo">League of Legends</a></li>
-          </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-          <!-- Session Links -->
-          <ul id="session-links" class="navbar-nav d-flex flex-row w-100 me-auto p-0">
-            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis">Sign in</a></li>
-            <li class="nav-item"><a href="#" class="nav-link link-body-emphasis">Sign up</a></li>
-          </ul>
-        </div>
-      </nav>
+          <div class="collapse navbar-collapse">
 
+            <!-- Navbar Links -->
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item d-flex">
+                <a href="/diseño/pages/overwatch.html" class="nav-link">
+                  <img src="/diseño/multimedia/img/overwatch-logo.png" alt="Overwatch logo" class="small-logo">
+                  Overwatch
+                </a>
+              </li>
+              <li class="nav-item d-flex">
+                <a href="/diseño/pages/lol.html" class="nav-link">
+                  <img src="/diseño/multimedia/img/lol-logo.png" alt="League of Legends logo" class="small-logo">
+                  League of Legends
+                </a>
+              </li>
+            </ul>
+
+            <!-- Session Links -->
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a href="#" class="nav-link">Sign in</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Sign up</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- Main content -->
@@ -51,8 +64,19 @@
           
           <!-- Search form -->
           <form id="search-form" class="col-8 col-lg-19 mx-auto" role="search">
-            <input type="search" class="form-control mb-4" placeholder="Enter Riot ID, player#NA1" aria-label="Search">
-            <button class="btn my-bg-black text-white w-100">submit</button>
+            <div class="row">
+              <div class="col-3 col-lg-3">
+                <select class="form-select" aria-label="Search Category">
+                  <option value="eu">EU</option>
+                  <option value="as">AS</option>
+                  <option value="am">AM</option>
+                </select>
+              </div>
+              <div class="col-9 col-lg-9">
+                <input type="search" class="form-control mb-4" placeholder="Enter Riot ID, player#NA1" aria-label="Search">
+              </div>
+            </div>
+            <button class="btn my-bg-black text-white w-100">SEARCH ID</button>
           </form>
         </div>
 
