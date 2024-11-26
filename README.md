@@ -4,6 +4,10 @@ https://brandmark.io/
 
 https://www.hostinger.es/tutoriales/paletas-de-colores-para-paginas-web
 
+Paleta tracker:
+
+https://coolors.co/060708-232429-18191c-e2263c-000000
+
 Paleta LOL:
 https://coolors.co/081f33-093459-18808e-fca637-cebc6f-d53435
 
