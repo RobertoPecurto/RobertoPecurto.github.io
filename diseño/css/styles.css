@@ -10,37 +10,139 @@
 
     /* Colors */
 
+    .my-black {
+        color: #060708;
+    }
+
     .my-bg-black {
         background-color: #060708;
     }
 
-    .my-bg-grey {
+    .raising-black {
+        color: #232429;
+    }
+
+    .bg-raising-black {
         background-color: #232429;
     }
 
-    .grey {
-        color: #494949;
+    .eerie-black {
+        color: #18191C;
     }
 
-    .bg-dark-blue {
-        background-color: #081F33;
+    .bg-eerie-black {
+        background-color: #18191C;
     }
 
-    .dark-blue {
+    .blue-violet {
+        color: #7137CF;
+    }
+
+    .bg-blue-violet {
+        background-color: #7137CF;
+    }
+
+    /* League of legends colors */
+
+    .oxford-blue {
         color: #081F33;
     }
 
-    .bg-yellow {
+    .bg-oxford-blue {
+        background-color: #081F33;
+    }
+
+    .prussian-blue {
+        color: #093459;
+    }
+
+    .bg-prussian-blue {
+        background-color: #093459;
+    }
+
+    .teal {
+        color: #18808E;
+    }
+
+    .bg-teal {
+        background-color: #18808E;
+    }
+
+    .orange-peel {
+        color: #FCA637;
+    }
+
+    .bg-orange-peel {
         background-color: #FCA637;
     }
 
-    .color-gold {
-        color: #CEBC6F;
+    /* Overwatch colors */
+
+    .erie-black {
+        color: #1F1F1F;
     }
 
+    .bg-erie-black {
+        background-color: #1F1F1F;
+    }
 
+    .onyx {
+        color: #3D3D3D;
+    }
 
-    
+    .bg-onix {
+        background-color: #3D3D3D;
+    }
+
+    .fulvous {
+        color: #E78400;
+    }
+
+    .bg-fulvous {
+        background-color: #E78400;
+    }
+
+    .spanish-orange {
+        color: #F06414;
+    }
+
+    .bg-spanish-orange {
+        background-color: #F06414;
+    }
+
+    /* PUBG colors */
+
+    .night {
+        color: #141412;
+    }
+
+    .bg-night {
+        background-color: #141412;
+    }
+
+    .jet {
+        color: #292929;
+    }
+
+    .bg-jet {
+        background-color: #292929;
+    }
+
+    .dark-goldenrod {
+        color: #9E8228;
+    }
+
+    .bg-dark-goldenrod {
+        background-color: #9E8228;
+    }
+
+    .carrot-orange {
+        color: #F39821;
+    }
+
+    .bg-carrot-orange {
+        background-color: #F39821;
+    }
 
     /* Fonts */
 
@@ -164,8 +266,7 @@
 
     /* Small screen Games */
     #landing-sidebar {
-        padding: 75px;
-        margin-left: 12px;
+        padding: 25px;
         margin-bottom: 25px;
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
@@ -184,7 +285,7 @@
     /* First section */
 
     #first-section {
-        background-image: url("/diseño/multimedia/img/banner-lol.jpg");
+        background-image: url("/diseño/multimedia/img/banner/banner-lol.jpg");
         border-bottom-left-radius: 100px;
         padding: 100px 250px;
     }
