@@ -8,17 +8,100 @@
 
 /* General styles */
 
+    /* Colors */
+
     .my-bg-black {
-        background-color: #0f0f0f;
+        background-color: #060708;
     }
 
     .my-bg-grey {
-        background-color: #131313;
+        background-color: #232429;
     }
 
-    .text-grey{
+    .grey {
         color: #494949;
     }
+
+    .bg-dark-blue {
+        background-color: #081F33;
+    }
+
+    .dark-blue {
+        color: #081F33;
+    }
+
+    .bg-yellow {
+        background-color: #FCA637;
+    }
+
+    .color-gold {
+        color: #CEBC6F;
+    }
+
+
+
+    
+
+    /* Fonts */
+
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .rajdhani-medium {
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .rajdhani-bold {
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .roboto-regular-16 {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .rajdhani-medium-32 {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .rajdhani-bold-35 {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .rajdhani-bold-48 {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        font-style: normal;
+    }
+    
 
 /* Header */
 
@@ -28,13 +111,13 @@
 
     /*Logo */
 
-    .trn-game-bar-dropdown-item__icon {
+    nav .item-icon {
         width: 24px;
         height: 24px;
         fill: #888888;
     }
     
-    .trn-game-bar-dropdown-item__icon:hover {
+    .item-icon:hover {
         fill: #a3a3a3;
     }
     
@@ -50,16 +133,14 @@
         padding-bottom: 0.05rem;
     }
 
-/* Main */
-
-    /* Welcome */
-
-    #main-welcome {
-        margin-top: 15px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+    .main-navbar {
+        width: 100vw;
     }
-    
+
+
+/* Index */
+
+/* Main */
 
     /* Games selector */
 
@@ -68,15 +149,13 @@
     }
 
     .card-img-top {
-        height: 220px;
         border-radius: 10px;
     }
 
-    /* Search */
+    .card-title {
+        font-size: 18px;
+    }
 
-    
-
-/* Footer */
 
 
 /* Media queries */
@@ -84,8 +163,50 @@
 @media (max-width: 1024px) {
 
     /* Small screen Games */
+    #landing-sidebar {
+        padding: 75px;
+        margin-left: 12px;
+        margin-bottom: 25px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
 
-    #games-section, #welcome-section {
+        text-align: center;
+    }
+
+    #landing-content, #landing-sidebar, #main-navbar {
         width: 100%;
+        margin-right: 0;
     }
 }
+
+/* League of Legends */
+
+    /* First section */
+
+    #first-section {
+        background-image: url("/diseño/multimedia/img/banner-lol.jpg");
+        border-bottom-left-radius: 100px;
+        padding: 100px 250px;
+    }
+
+        /* Intro */
+
+        #intro-image {
+            height: 55px;
+            width: 55px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 3px;
+
+            margin-bottom: 19px;
+        }
+
+        #intro-image svg {
+            height: 35px;
+            width: 35px;
+            fill: #081F33;
+        }
+
