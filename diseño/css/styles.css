@@ -240,7 +240,7 @@
     }
 
 
-/* Index */
+/* index */
 
 /* Main */
 
@@ -257,8 +257,6 @@
     .card-title {
         font-size: 18px;
     }
-
-
 
 /* Media queries */
 
@@ -280,11 +278,12 @@
     }
 }
 
-/* League of Legends */
 
-    /* First section */
+/* First section */
 
-    #first-section {
+    /* League of Legends */
+
+    #lol-first-section {
         background-image: url("/diseño/multimedia/img/banner/banner-lol.jpg");
         border-bottom-left-radius: 100px;
         padding: 100px 250px;
@@ -308,6 +307,12 @@
         #intro-image svg {
             height: 35px;
             width: 35px;
-            fill: #081F33;
         }
 
+/* Overwatch */
+
+    #overwatch-first-section {
+        background-image: url("/diseño/multimedia/img/banner/banner-overwatch.jpg");
+        border-bottom-left-radius: 100px;
+        padding: 100px 250px;
+    }
