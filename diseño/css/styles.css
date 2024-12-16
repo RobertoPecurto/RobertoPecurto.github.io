@@ -52,6 +52,10 @@
         background-color: #081F33;
     }
 
+    .fill-oxford-blue {
+        fill: #081F33;
+    }
+
     .prussian-blue {
         color: #093459;
     }
@@ -278,41 +282,59 @@
     }
 }
 
+/* Login section */
+
+    .form-control{
+        
+    }
+
+    .btn-outline-light{
+        color: #7137CF;
+        border-color: #7137CF;
+    }
+
+    .btn-outline-light:hover{
+        background-color: #7137CF;
+        border-color: black;
+    }
+
 
 /* First section */
 
+    /* Intro */
+
+    #intro-image {
+        height: 55px;
+        width: 55px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 3px;
+
+        margin-bottom: 19px;
+    }
+
+    #intro-image svg {
+        height: 35px;
+        width: 35px;
+    }
+
+    
+
     /* League of Legends */
 
-    #lol-first-section {
-        background-image: url("/diseño/multimedia/img/banner/banner-lol.jpg");
-        border-bottom-left-radius: 100px;
-        padding: 100px 250px;
-    }
-
-        /* Intro */
-
-        #intro-image {
-            height: 55px;
-            width: 55px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            border-radius: 3px;
-
-            margin-bottom: 19px;
+        #lol-first-section {
+            background-image: url("/diseño/multimedia/img/banner/banner-lol.jpg");
+            border-bottom-left-radius: 10rem;
+            padding: 10rem 9rem;
         }
 
-        #intro-image svg {
-            height: 35px;
-            width: 35px;
+    /* Overwatch */
+
+        #overwatch-first-section {
+            background-image: url("/diseño/multimedia/img/banner/banner-overwatch.jpg");
+            border-bottom-left-radius: 100px;
+            padding: 10rem 9rem;
         }
-
-/* Overwatch */
-
-    #overwatch-first-section {
-        background-image: url("/diseño/multimedia/img/banner/banner-overwatch.jpg");
-        border-bottom-left-radius: 100px;
-        padding: 100px 250px;
-    }
