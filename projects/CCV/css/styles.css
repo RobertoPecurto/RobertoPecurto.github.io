@@ -40,6 +40,24 @@
       font-family: 'Bentham';
       transform: scale(1,1.5);
     }
+
+    .times {
+      font-family: 'Times New Roman';
+    }
+
+    .comforta {
+      font-family: 'Comfortaa';
+      transform: scale(1,1.6);
+    }
+
+    .bitter {
+      font-family: 'Bitter', serif;
+    }
+
+    .italiana {
+      font-family: 'Italiana';
+      transform: scale(1,1.5);
+    }
   
   /* Main content */
 
