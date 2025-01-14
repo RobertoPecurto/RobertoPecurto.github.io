@@ -1,0 +1,68 @@
+/* Style reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+  
+  /* General styles */
+  
+    /* Colors */
+  
+    .timberwolf {
+      color: #DDD0C8;
+    }
+  
+    .bg-timberwolf {
+      background-color: #DDD0C8;
+    }
+
+    .jet {
+        color: #323232;
+    }
+
+    .bg-jet {
+      background-color: #323232;
+    }
+  
+    .black {
+      color: #0E0E0E;
+    }
+  
+    .bg-black {
+      background-color: #0E0E0E;
+    }
+
+    /* Fonts */
+
+    .bentham {
+      font-family: 'Bentham';
+      transform: scale(1,1.5);
+    }
+  
+  /* Main content */
+
+    /* Image */
+
+    img {
+        width: 65px;
+        height: 100px;
+        border-radius: 20%;
+    }
+
+    /* Left section */
+    
+    
+
+    /* Right section */
+
+    .nav-fs {
+        font-size: 5rem;
+    }
+
+    .nav-fs:hover {
+        color: #323232;
+        font-style: italic;
+    }
+    

@@ -1,0 +1,247 @@
+/*GENERAL*/
+
+body {
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+/*CABEZERA*/
+
+header {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fondo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fondo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.fondo p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/*NAVEGADORES*/
+
+.navegadores {
+    display: flex;
+    justify-content: center;
+}
+
+.nav1 {
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+}
+
+.nav2 {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #990000;
+}
+
+
+/*TABLAS*/
+
+table, th, td{
+    border: 2px solid;
+    border-collapse: collapse;
+    background-color: #2b2b2b;
+    color: white;
+}
+
+    /*DIRECTORES*/
+
+    .tab_dir div{
+        padding: 1px;
+    }
+
+    .tab_dir th{
+        text-align: center;
+        padding: 5px;
+    }
+
+    .tab_dir a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .tab_dir a:hover{
+        color: #990000;
+    }
+
+    .tab_dir td{
+        padding: 20px;
+    }
+
+    /*TRAILER*/
+
+    .trailer iframe{
+        padding-bottom: 50px;
+    }
+
+    .trailer dt{
+        color: white;
+        background-color: #2b2b2b;
+        padding: 10px;
+        width: 100%;
+    }
+
+    
+
+/*PLATAFORMAS*/
+
+.plataformas {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.plataformas h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.plataformas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.plataformas li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.plataformas a {
+    color: #333;
+    text-decoration: none;
+}
+
+.plataformas a:hover {
+    color: #990000;
+}
+
+/* FORMULARIO */
+
+form {
+    margin: auto;
+    width: 85%;
+}
+
+fieldset {
+    border: 1px;
+    background-color: #2b2b2b;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+legend {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: calc(100% - 25px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #990000;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #333;
+    color: white;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #990000;
+}
+
+footer p img{
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}

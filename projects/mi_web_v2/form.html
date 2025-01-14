@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <!-- <link rel="stylesheet" href="styles2.css"> -->
+        <title>Formulario</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1 id="inicio">Búsqueda personalizada</h1>
+            <nav class="nav1">
+                <ul>
+                    <li><a href="index.html">Página inicial</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="sec_princ">
+            <p>Introduce tu información de contacto y tus gustos cinematográficos y nos encargaremos de hacerte llegar una lista con películas que te puedan gustar.</p>
+        </section>
+
+        <section id="sec_secun">
+            <form name="busqueda" action="post" method="get">
+                <fieldset>
+                    <legend>Inicio sesión</legend>
+                    <br>
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" size="30" maxlength="20" placeholder="Escriba aquí su nombre">
+                    
+                    <label>Apellidos</label>
+                    <input type="text" name="apellidos" size="30" maxlength="50" placeholder="Escriba aquí sus apellidos">
+                    <br><br>
+
+                    <label>Correo@electrónico</label>
+                    <input type="email" name="email" size="30" maxlength="50" placeholder="Escriba aquí su correo electrónico">
+
+                    <label>Password</label>
+                    <input type="password" name="Password" size="30" maxlength="20" placeholder="Escriba aquí su contraseña">
+                    <br><br>
+                </fieldset>
+                    <br>
+
+                <fieldset>
+                    <legend>Género de la película</legend>
+                        <input type="radio" name="gen" value="Accion" id="Accion">
+                            <label>Acción</label>
+                            <br>
+                        <input type="radio" name="gen" value="Drama" id="Drama">
+                            <label>Drama</label>
+                            <br>
+                        <input type="radio" name="gen" value="Terror" id="Terror">
+                            <label>Terror</label>
+                            <br>
+                        <input type="radio" name="gen" value="Comedia" id="Comedia">
+                            <label>Comedia</label>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Director</legend>
+                    <select name="sel_dir">
+                        <option value="Tarantino">Quentin Tarantino</option>
+                        <option value="Scorsese">Martin Scorsese</option>
+                        <option value="Aster">Ari Aster</option>
+                        <option value="Spielberg">Steven Spielberg
+                        </option>
+                    </select>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Comentario</legend>
+                    <textarea name="comentario" id="comentario" cols="50" rows="5">Introduce aquí que te han parecido las películas que has visto...</textarea>
+                </fieldset>
+                <br>
+                
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </section>
+
+        <footer>
+            <p><a href="#inicio">Volver al inicio</a></p>
+            <p>&copy Página creada por Roberto Pecurto Escrig en 2024</p>
+        </footer>
+    </body>
+
+</html>
