@@ -7,48 +7,65 @@
     <title>Navegador de mis Webs</title>
     <!-- Enlace a Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Enlace a mi CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header class="bg-dark text-white py-4 text-center">
-        <h1 class="mb-0">Roberto Pecurto</h1>
+        <div>
+            <h1 class="mb-0">Roberto Pecurto</h1>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href=""></a>
+                </li>
+            </ul>
+        </div>
     </header>
 
-    <main>
+    <main class="flex-grow-1">
         <div class="container my-5">
             <div class="row g-4">
-                <!-- Carta 1: Tracker Project-->
+                <!-- Carta 1: Curriculum Vitae -->
                 <div class="col-md-4">
-                    <div class="card shadow-sm border-0" style="border-radius: 15px;">
-                        <a href="projects/diseño/index.html">
-                            <img src="multimedia/img/prev_tracker.png" class="card-img-top img-fluid" style="border-radius: 15px;" alt="Currículum Vitae">
+                    <div class="card shadow-sm border-0 card-custom">
+                        <a href="projects/CCV/index.html">
+                            <img src="css/multimedia/img/ccv_preview.png" class="card-img-top img-fluid" alt="Currículum Vitae">
                         </a>
                     </div>
                 </div>
                 <!-- Carta 2: Blog de películas -->
                 <div class="col-md-4">
-                    <div class="card shadow-sm border-0" style="border-radius: 15px;">
-                        <img src="https://via.placeholder.com/400x250" class="card-img-top img-fluid" style="border-radius: 15px;" alt="Recomendación de películas">
+                    <div class="card shadow-sm border-0 card-custom">
+                        <a href="projects/mi_web_v2/index.html">
+                            <img src="css/multimedia/img/blog_peliculas_preview.png" class="card-img-top img-fluid" alt="Blog de películas">
+                        </a>
                     </div>
                 </div>
-                <!-- Carta 3: Flower Blog -->
+                <!-- Carta 3: JDM Tuning -->
                 <div class="col-md-4">
-                    <div class="card shadow-sm border-0" style="border-radius: 15px;">
-                        <img src="https://via.placeholder.com/400x250" class="card-img-top img-fluid" style="border-radius: 15px;" alt="Tracker Project">
+                    <div class="card shadow-sm border-0 card-custom">
+                        <a href="projects/proyecto1/index.html">
+                            <img src="css/multimedia/img/jdm_tuning_preview.png" class="card-img-top img-fluid" alt="JDM Tuning">
+                        </a>
                     </div>
                 </div>
-                <!-- Carta 4 -->
+                <!-- Carta 4: Tracker Project -->
                 <div class="col-md-4">
-                    <div class="card shadow-sm border-0" style="border-radius: 15px;">
-                        <img src="https://via.placeholder.com/400x250" class="card-img-top img-fluid" style="border-radius: 15px;" alt="Diseño web en cliente">
+                    <div class="card shadow-sm border-0 card-custom">
+                        <a href="projects/diseño/index.html">
+                            <img src="css/multimedia/img/tracker_preview.png" class="card-img-top img-fluid" alt="Tracker Project">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    
 
-    <footer class="bg-dark text-white py-3 text-center">
+    <footer class="bg-dark text-white py-3 text-center mt-auto">
         <p class="mb-0">&copy; 2025 Roberto Pecurto</p>
     </footer>
 

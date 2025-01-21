@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Summary & Stats</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Colors */
+
+        .my-black {
+        color: #060708;
+        }
+
+        .my-bg-black {
+        background-color: #060708;
+        }
+
+        .raising-black {
+        color: #232429;
+        }
+
+        .bg-raising-black {
+        background-color: #232429;
+        }
+
+        .eerie-black {
+        color: #18191C;
+        }
+
+        .bg-eerie-black {
+        background-color: #18191C;
+        }
+
+        .blue-violet {
+        color: #7137CF;
+        }
+
+        .bg-blue-violet {
+        background-color: #7137CF;
+        }
+
+        /* Overwatch colors */
+
+        .erie-black {
+        color: #1F1F1F;
+        }
+
+        .bg-erie-black {
+        background-color: #1F1F1F;
+        }
+
+        .onyx {
+        color: #3D3D3D;
+        }
+
+        .bg-onix {
+        background-color: #3D3D3D;
+        }
+
+        .fulvous {
+        color: #E78400;
+        }
+
+        .bg-fulvous {
+        background-color: #E78400;
+        }
+
+        .spanish-orange {
+        fill: #F06414;
+        }
+
+        .bg-spanish-orange {
+        background-color: #F06414;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .role-info {
+            margin-left: 15px;
+        }
+
+        .img-thumbnail {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .text-dark-blue {
+            background-color: #1e3a8a;
+        }
+
+        .roboto-regular-16 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            font-size: 16px;
+        }
+
+        .rajdhani-bold-35 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+
+        .rajdhani-bold-25 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .rajdhani-bold-20 {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body class="bg-dark text-white">
+
+    <div class="container mt-5">
+        <!-- Player Summary Section -->
+        <div id="player-summary" class="section">
+            <h1 class="rajdhani-bold-35">PlayerName</h1>
+            <img src="avatar_url" alt="Player avatar" class="img-thumbnail mb-3">
+            <p class="roboto-regular-16">Title: PlayerTitle</p>
+        </div>
+
+        <!-- Endorsement Section -->
+        <div class="section">
+            <h3 class="rajdhani-bold-35">Endorsement</h3>
+            <p class="roboto-regular-16">Level: 5</p>
+            <img src="endorsement_frame_url" alt="Endorsement frame" class="img-thumbnail mb-3">
+        </div>
+
+        <!-- Competitive Ranks Section -->
+        <div class="section">
+            <h2 class="rajdhani-bold-35">Competitive Ranks</h2>
+
+            <h3 class="rajdhani-bold-25">PC</h3>
+            <div class="role-info">
+                <h4 class="rajdhani-bold-20">Role</h4>
+                <p class="roboto-regular-16">Division: Platinum</p>
+                <p class="roboto-regular-16">Tier: 1</p>
+                <img src="role_icon_url" alt="Role icon" class="img-thumbnail mb-2">
+                <img src="rank_icon_url" alt="Rank icon" class="img-thumbnail mb-2">
+                <img src="tier_icon_url" alt="Tier icon" class="img-thumbnail mb-2">
+            </div>
+
+            <h3 class="rajdhani-bold-25">Console</h3>
+            <div class="role-info">
+                <h4 class="rajdhani-bold-20">Role</h4>
+                <p class="roboto-regular-16">Division: Gold</p>
+                <p class="roboto-regular-16">Tier: 3</p>
+                <img src="role_icon_url" alt="Role icon" class="img-thumbnail mb-2">
+                <img src="rank_icon_url" alt="Rank icon" class="img-thumbnail mb-2">
+                <img src="tier_icon_url" alt="Tier icon" class="img-thumbnail mb-2">
+            </div>
+        </div>
+
+        <!-- Last Updated Section -->
+        <div class="section">
+            <p class="roboto-regular-16">Last updated at: 2025-01-12 14:25:00</p>
+        </div>
+
+        <!-- Player Stats Section -->
+        <h2 class="rajdhani-bold-35">General Stats</h2>
+        <ul class="list-unstyled">
+            <li class="roboto-regular-16">Games Played: 100</li>
+            <li class="roboto-regular-16">Games Won: 70</li>
+            <li class="roboto-regular-16">Games Lost: 30</li>
+            <li class="roboto-regular-16">KDA: 3.5</li>
+            <li class="roboto-regular-16">Winrate: 70%</li>
+        </ul>
+
+        <h3 class="rajdhani-bold-25">Heroes Stats</h3>
+        <ul class="list-unstyled">
+            <li>
+                <h4 class="rajdhani-bold-20">HeroName</h4>
+                <ul class="list-unstyled">
+                    <li class="roboto-regular-16">Assists: 15</li>
+                    <li class="roboto-regular-16">Damage: 5000</li>
+                    <li class="roboto-regular-16">Deaths: 8</li>
+                    <li class="roboto-regular-16">Eliminations: 20</li>
+                    <li class="roboto-regular-16">Healing: 2000</li>
+                    <li class="roboto-regular-16">Winrate: 75%</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

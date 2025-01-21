@@ -1,270 +1,276 @@
-/* Style reset */
+    /* Style reset */
 
     * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     }
 
-/* General styles */
+    /* General styles */
 
     /* Colors */
 
     .my-black {
-        color: #060708;
+    color: #060708;
     }
 
     .my-bg-black {
-        background-color: #060708;
+    background-color: #060708;
     }
 
     .raising-black {
-        color: #232429;
+    color: #232429;
     }
 
     .bg-raising-black {
-        background-color: #232429;
+    background-color: #232429;
     }
 
     .eerie-black {
-        color: #18191C;
+    color: #18191C;
     }
 
     .bg-eerie-black {
-        background-color: #18191C;
+    background-color: #18191C;
     }
 
     .blue-violet {
-        color: #7137CF;
+    color: #7137CF;
     }
 
     .bg-blue-violet {
-        background-color: #7137CF;
+    background-color: #7137CF;
     }
 
     /* League of legends colors */
 
     .oxford-blue {
-        color: #081F33;
+    fill: #081F33;
     }
 
     .bg-oxford-blue {
-        background-color: #081F33;
-    }
-
-    .fill-oxford-blue {
-        fill: #081F33;
+    background-color: #081F33;
     }
 
     .prussian-blue {
-        color: #093459;
+    fill: #093459;
     }
 
     .bg-prussian-blue {
-        background-color: #093459;
+    background-color: #093459;
     }
 
     .teal {
-        color: #18808E;
+    fill: #18808E;
     }
 
     .bg-teal {
-        background-color: #18808E;
+    background-color: #18808E;
     }
 
     .orange-peel {
-        color: #FCA637;
+    fill: #FCA637;
     }
 
     .bg-orange-peel {
-        background-color: #FCA637;
+    background-color: #FCA637;
+    }
+
+    .win {
+    background-color: #3fff00;
+    }
+
+    .lose {
+    background-color: #ff0000;
     }
 
     /* Overwatch colors */
 
     .erie-black {
-        color: #1F1F1F;
+    color: #1F1F1F;
     }
 
     .bg-erie-black {
-        background-color: #1F1F1F;
+    background-color: #1F1F1F;
     }
 
     .onyx {
-        color: #3D3D3D;
+    color: #3D3D3D;
     }
 
     .bg-onix {
-        background-color: #3D3D3D;
+    background-color: #3D3D3D;
     }
 
     .fulvous {
-        color: #E78400;
+    color: #E78400;
     }
 
     .bg-fulvous {
-        background-color: #E78400;
+    background-color: #E78400;
     }
 
     .spanish-orange {
-        color: #F06414;
+    fill: #F06414;
     }
 
     .bg-spanish-orange {
-        background-color: #F06414;
+    background-color: #F06414;
     }
 
     /* PUBG colors */
 
     .night {
-        color: #141412;
+    color: #141412;
     }
 
     .bg-night {
-        background-color: #141412;
+    background-color: #141412;
     }
 
     .jet {
-        color: #292929;
+    color: #292929;
     }
 
     .bg-jet {
-        background-color: #292929;
+    background-color: #292929;
     }
 
     .dark-goldenrod {
-        color: #9E8228;
+    color: #9E8228;
     }
 
     .bg-dark-goldenrod {
-        background-color: #9E8228;
+    background-color: #9E8228;
     }
 
     .carrot-orange {
-        color: #F39821;
+    color: #F39821;
     }
 
     .bg-carrot-orange {
-        background-color: #F39821;
+    background-color: #F39821;
     }
 
     /* Fonts */
 
     .roboto-regular {
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     }
 
     .roboto-medium {
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     }
-    
+
     .roboto-bold {
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     }
 
     .rajdhani-medium {
-        font-family: "Rajdhani", sans-serif;
-        font-weight: 500;
-        font-style: normal;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     }
 
     .rajdhani-bold {
-        font-family: "Rajdhani", sans-serif;
-        font-weight: 700;
-        font-style: normal;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     }
 
     .roboto-regular-16 {
-        font-family: "Roboto", sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
     }
 
     .rajdhani-medium-32 {
-        font-family: "Rajdhani", sans-serif;
-        font-size: 32px;
-        font-weight: 500;
-        font-style: normal;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    font-style: normal;
     }
 
     .rajdhani-bold-35 {
-        font-family: "Rajdhani", sans-serif;
-        font-size: 35px;
-        font-weight: 700;
-        font-style: normal;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    font-style: normal;
     }
 
     .rajdhani-bold-48 {
-        font-family: "Rajdhani", sans-serif;
-        font-size: 48px;
-        font-weight: 700;
-        font-style: normal;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    font-style: normal;
     }
-    
 
-/* Header */
+
+    /* Header */
 
     header {
-        padding: 0;
+    padding: 0;
     }
 
     /*Logo */
 
     nav .item-icon {
-        width: 24px;
-        height: 24px;
-        fill: #888888;
+    width: 24px;
+    height: 24px;
+    fill: #888888;
     }
-    
+
     .item-icon:hover {
-        fill: #a3a3a3;
+    fill: #a3a3a3;
     }
-    
+
 
     /* Navbar */
 
     .navbar {
-        padding: 0.05rem;
+    padding: 0.05rem;
     }
 
     .navbar-nav .nav-link {
-        padding-top: 0.05rem;
-        padding-bottom: 0.05rem;
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
     }
 
     .main-navbar {
-        width: 100vw;
+    width: 100vw;
     }
 
 
-/* index */
+    /* Index */
 
-/* Main */
+    /* Main */
 
     /* Games selector */
 
     #games-welcome {
-        margin-bottom: 15px;
+    margin-bottom: 15px;
     }
 
     .card-img-top {
-        border-radius: 10px;
+    border-radius: 10px;
     }
 
     .card-title {
-        font-size: 18px;
+    font-size: 18px;
     }
 
-/* Media queries */
 
-@media (max-width: 1024px) {
+
+    /* Media queries */
+
+    @media (max-width: 1024px) {
 
     /* Small screen Games */
     #landing-sidebar {
@@ -280,22 +286,116 @@
         width: 100%;
         margin-right: 0;
     }
-}
 
-/* Login section */
-
-    .btn-outline-light{
-        color: #7137CF;
-        border-color: #7137CF;
+    /* Noticias en dispositivos pequeños */
+    #news-section {
+        order: 2; /* Mover la sección de noticias al final */
+        width: 100%; /* Asegurarse de que ocupe todo el ancho */
+        padding: 15px; /* Añadir algo de relleno */
+        margin-top: 30px; /* Separar un poco de las otras secciones */
     }
 
-    .btn-outline-light:hover{
-        background-color: #7137CF;
-        border-color: black;
+    #news-section .container {
+        max-height: none; /* Eliminar la restricción de altura para que pueda crecer */
+        overflow-y: visible; /* Asegurar que todo el contenido se vea */
     }
 
+    #news-section ul {
+        padding-left: 0; /* Eliminar margen de lista */
+    }
 
-/* First section */
+    #news-section li {
+        margin-bottom: 20px; /* Añadir espacio entre los artículos */
+    }
+
+    /* Imágenes de las noticias */
+    #news-section img {
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    /* Títulos de noticias */
+    #news-section h4 {
+        font-size: 20px; /* Ajustar el tamaño de fuente */
+    }
+
+    #news-section p {
+        font-size: 14px; /* Ajustar el tamaño de la descripción */
+    }
+
+    }
+
+    /* First section */
+
+    /* League of Legends */
+
+        #lol-first-section {
+        background-image: url("/public/multimedia/img/banner/banner-lol.jpg");
+        border-bottom-left-radius: 100px;
+        padding: 200px 250px;
+        }
+        .lol {
+        li{
+            list-style: none;
+        }
+        .split-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .split-item {
+            flex: 1;
+            padding: 10px;
+        }
+        }
+
+        #riot-search-button {
+        background-color: #D53435;
+        }
+
+        #riot-search-button:hover {
+        background-color: #d64646;
+        }
+
+
+    /* Overwatch 2 */
+
+        #overwatch-first-section {
+        background-image: url("/public/multimedia/img/banner/banner-overwatch.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-bottom-left-radius: 100px;
+        padding: 200px 250px;
+        }
+
+        #battlenet-search-button {
+        background-color: #148eff;
+        }
+
+        #battlenet-search-button:hover {
+        background-color: #2899ff;
+        }
+
+    /* PUBG */
+
+        #pubg-first-section {
+        background-image: url("/public/multimedia/img/banner/banner-pubg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-bottom-left-radius: 100px;
+        padding: 200px 250px;
+        }
+
+        #pubg-search-button {
+        background-color: #141412;
+        }
+
+        #pubg-search-button:hover {
+        background-color: #000000;
+        }
 
     /* Intro */
 
@@ -308,29 +408,11 @@
         align-items: center;
 
         border-radius: 3px;
-
         margin-bottom: 19px;
     }
 
     #intro-image svg {
-        height: 35px;
-        width: 35px;
+        height: 40px;
+        width: 40px;
     }
 
-    
-
-    /* League of Legends */
-
-        #lol-first-section {
-            background-image: url("multimedia/img/banner/banner-lol.jpg");
-            border-bottom-left-radius: 10rem;
-            padding: 10rem 9rem;
-        }
-
-    /* Overwatch */
-
-        #overwatch-first-section {
-            background-image: url("multimedia/img/banner/banner-overwatch.jpg");
-            border-bottom-left-radius: 100px;
-            padding: 10rem 9rem;
-        }

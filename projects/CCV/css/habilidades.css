@@ -1,0 +1,108 @@
+/* Style reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+
+    /* Colors */
+
+    .timberwolf {
+        color: #DDD0C8;
+    }
+
+    .bg-timberwolf {
+    background-color: #DDD0C8;
+    }
+
+    .linen {
+    color: #EFE5D8;
+    }
+
+    .bg-linen {
+    background-color: #EFE5D8;
+    }
+
+    .jet {
+        color: #323232;
+    }
+
+    .bg-jet {
+    background-color: #323232;
+    }
+
+    .eerie {
+    color: #1A1818;
+    }
+
+    .bg-eerie {
+    background-color: #1A1818;
+    }
+
+    /* Fonts */
+
+    .montserrat-500 {
+        font-family: 'Montserrat';
+        font-weight: 600;
+    }
+
+    .montserrat-400 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    }
+
+    @font-face {
+    font-family: Bludhaven;
+    src: url('fonts/BLUDHAVEN.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    .bludhaven {
+    font-family: Bludhaven, sans-serif;
+    }
+
+    /* Main content */
+
+        /*Navbar*/
+
+        img {
+            width: 85px;
+            height: 120px;
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10%;
+        }
+
+/* Media queries */
+
+    /* For large screens */
+    @media (min-width: 1200px) {
+
+        .bludhaven {
+            font-size: 3rem;
+        }
+        .montserrat-400 {
+            font-size: 1.50rem;
+        }
+
+        .montserrat-500 {
+            font-size: 4rem;
+        }
+    }
+
+    /* For medium screens */
+    @media (min-width: 768px) and (max-width: 1199px) {
+        .nav-link {
+            font-size: 1.8rem; /* Adjusted font size for medium screens */
+        }
+    }
+
+    /* For small screens */
+    @media (max-width: 767px) {
+        .nav-link {
+            font-size: 1.5rem; /* Adjusted font size for small screens */
+        }
+    }
