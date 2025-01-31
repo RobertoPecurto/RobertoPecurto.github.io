@@ -179,6 +179,50 @@
                 color: #1B1B1B;
             }
 
+            /* From Uiverse.io by mobinkakei */ 
+            .btn {
+                width: 100px;
+                height: 35px;
+                border-radius: 50px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                position: relative;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+                overflow: hidden;
+            }
+            
+            .btn span {
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                transition: top 0.5s;
+            }
+            
+            .btn-text-one {
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+            
+            .btn-text-two {
+                position: absolute;
+                width: 100%;
+                top: 150%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+            
+            .btn:hover .btn-text-one {
+                top: -100%;
+            }
+            
+            .btn:hover .btn-text-two {
+                top: 50%;
+            }
+  
+
     /* Main */
 
     body {
@@ -228,6 +272,20 @@
             background-color: #1d1d1d;
         }
 
+        #contactForm input:focus, 
+        #contactForm textarea:focus {
+            border-color: #777777; /* Color del borde al seleccionar */
+            outline: none;
+            box-shadow: 0 0 10px #777777;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #contactForm input::placeholder, 
+        #contactForm textarea::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+            font-style: italic;
+        }
+
         .modal-button {
             background-color: #111111;
             color: #F7F5F5;
@@ -237,6 +295,22 @@
         .modal-button:hover {
             background-color: #181818;
             color: #F7F5F5;
+            transform: scale(1.05);
+        }
+
+        .modal.fade .modal-dialog {
+            transform: translateY(-50px);
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .modal.show .modal-dialog {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .close-button-custom {
+            background-color: #777777;
         }
 
     /* Footer */
@@ -258,6 +332,11 @@
 
         /* Mobile phones */
         @media (max-width: 576px) {
+            .modal-custom {
+                max-width: 375px;
+                width: 100%;
+            }
+
             #web-developer-container {
                 flex-direction: column;
                 align-items: center;

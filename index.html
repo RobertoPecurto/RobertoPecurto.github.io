@@ -46,7 +46,10 @@
                 <span>Web Developer <br> Folio / 2022 — 2025</span>
             </div>
             <div class="col-12 col-md-1 pt-2">
-                <button id="contact-button" class="btn gray text-uppercase" data-bs-toggle="modal" data-bs-target="#contactModal"><span>Contacto</span></button>
+                <button id="contact-button" class="btn gray text-uppercase" data-bs-toggle="modal" data-bs-target="#contactModal">
+                    <span class="btn-text-one">Contact</span>
+                    <span class="btn-text-two">Contact</span>
+                </button>
             </div>
         </div>
     </header>
@@ -81,7 +84,6 @@
                 </div>
             </div>
         </div>
-        
     </main>
     
     <!-- Footer -->
@@ -104,11 +106,11 @@
             <div class="modal-content bg-whit-smoke">
                 <div class="modal-header">
                     <h5 class="modal-title text-uppercase" id="contactModalLabel">Send a mail</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close close-button-custom" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <!-- Formulario que usará Formspree -->
-                    <form id="contactForm" action="https://formspree.io/f/xvgzrgel" method="POST">
+                    <form id="contactForm">
                         <div class="mb-3">
                             <label for="name" class="form-label text-uppercase">Name</label>
                             <input type="text" class="form-control" id="name" name="name" required>

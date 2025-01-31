@@ -45,12 +45,12 @@ $(document).ready(function() {
                     email: email,
                     message: message
                 },
-                success: function() {
+                dataType: "json",
+                success: function(response) {
                     $("#responseMessage").html("<p class='alert alert-success'>Thanks for contacting us! We have received your message.</p>").show();
-                    $("#contactModal").modal('hide');
                     $("#contactForm")[0].reset();
                 },
-                error: function() {
+                error: function(jqXHR, textStatus, errorThrown) {
                     $("#responseMessage").html("<p class='alert alert-danger'>There was an error sending your message. Please try again later.</p>").show();
                 }
             })
