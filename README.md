@@ -18,3 +18,7 @@ Paleta pubg:
 https://coolors.co/141412-292929-9e8228-f39821-cdba6c-148eff
 
 Hunter green #2c5f34
+
+https://www.seyi.dev/
+
+https://brittanychiang.com/
