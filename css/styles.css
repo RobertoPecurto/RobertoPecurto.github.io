@@ -258,11 +258,54 @@
 
         /* Mobile phones */
         @media (max-width: 576px) {
+            #web-developer-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        
+            #web-text {
+                order: 1; /* Mantiene el texto arriba */
+            }
+        
+            #web-image {
+                order: 2; /* Mueve la imagen al final */
+                margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+                margin-top: 15px; /* Agrega un espacio entre el texto y la imagen */
+                height: auto;
+                width: 50vw; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+            }
+        
+            #developer-text {
+                order: 3; /* Mantiene "developer" debajo de la imagen */
+            }
         }
 
         /* Vertical tablets */
         @media (min-width: 577px) and (max-width: 768px) {
-            
+            #web-developer-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        
+            #web-text {
+                order: 1; /* Mantiene el texto arriba */
+            }
+        
+            #web-image {
+                order: 2; /* Mueve la imagen al final */
+                margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+                margin-top: 15px; /* Agrega un espacio entre el texto y la imagen */
+                height: auto;
+                width: 50vw; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+            }
+        
+            #developer-text {
+                order: 3; /* Mantiene "developer" debajo de la imagen */
+            }
         }
 
         /* Horizontal tablets or laptops */
