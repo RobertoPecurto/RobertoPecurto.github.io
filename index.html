@@ -1,144 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Roberto — Web designer</title>
+        <link rel="icon" href="/css/multimedia/icon/favicon.ico">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roberto — Web designer</title>
-    <link rel="icon" href="/css/multimedia/icon/favicon.ico">
+        <!-- Bootstrap link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-    <!-- Custom fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-    <!-- AOS CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <!-- Locomotive Scroll CSS -->
+        <link rel="stylesheet" href="/css/locomotive-scroll.css">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/styles.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/styles.css">
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Custom JS -->
-    <script src="scripts/main.js"></script>
-
-    <!-- AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
-</head>
+    </head>
 
 <body class="d-flex flex-column min-vh-100 bg-erie gray mx-4">
-    <header class="pt-3 text-uppercase row">
-        <div class="col-6 col-md-3 ">
-            <span class="open-sans">Roberto <br> Pecurto</span>
-        </div>
-        <div class="col-6 col-md-9  row">
-            <div class="col-12 col-md-11 ">
-                <span>Web Developer <br> Folio / 2022 — 2025</span>
+        <header class="pt-3 text-uppercase row">
+            <div class="col-6 col-md-4 ">
+                <span class="open-sans text-white">Roberto <br> Pecurto</span>
             </div>
-            <div class="col-12 col-md-1 pt-2">
-                <button id="contact-button" class="btn gray text-uppercase" data-bs-toggle="modal" data-bs-target="#contactModal">
-                    <span class="btn-text-one">Contact</span>
-                    <span class="btn-text-two">Contact</span>
-                </button>
-            </div>
-        </div>
-    </header>
-    
-
-    <main class="pt-1">
-        <div class="">
-
-            <!-- Introduction -->
-            <div id="web-developer-container" class="container-fluid pb-5 m-0">
-                <div class="d-flex align-items-center flex-wrap flex-md-nowrap">
-                    <span id="web-text" class="text-uppercase bebas-neue-big">web</span>
-                    <img src="css/multimedia/img/web-developer.png" 
-                        alt="Web developer" 
-                        class="img-fluid"
-                        id="web-image">
+            <div class="col-6 col-md-8  row">
+                <div class="col-12 col-md-10 ">
+                    <span>Web Developer <br> Folio / 2022 — 2025</span>
                 </div>
-                
-                <span id="developer-text" class="text-uppercase bebas-neue-big">developer</span>
-            </div>
-
-            <!-- Sections -->
-            <div id="sections-container" class="container-fluid px-0 mx-0">
-                <div class="border-gray-left d-flex align-items-center justify-content-end" >
-                    <a class="bebas-neue-mid py-5 gray" href="pages/projects.html" data-aos="fade-left">projects</a>
-                </div>
-                <div class="border-gray-right d-flex align-items-center justify-content-start">
-                    <a class="bebas-neue-mid py-5 gray" href="curriculum.pdf" target="_blank" data-aos="fade-right">curriculum</a>
-                </div>
-                <div class="border-gray-left d-flex align-items-center justify-content-end">
-                    <a class="bebas-neue-mid py-5 gray" href="p" data-aos="fade-left">about me</a>
+                <div class="col-12 col-md-2 pt-2">
+                    <button id="contact-button" class="btn gray text-uppercase" data-bs-toggle="modal" data-bs-target="#contactModal">
+                        <span class="btn-text-one">Contact</span>
+                        <span class="btn-text-two">Contact</span>
+                    </button>
                 </div>
             </div>
-        </div>
-    </main>
-    
-    <!-- Footer -->
-    <footer class="py-3 text-center">
-        <p class="mb-0 d-inline-block">&copy; 2025 Roberto Pecurto</p>
+        </header>
+        
 
-        <!-- Social Media Icons -->
-        <div class="social-icons d-inline-block ms-3">
-            <a href="" target="_blank" class="mx-2 gray"><i class="fab fa-twitter"></i></a>
-            <a href="" target="_blank" class="mx-2 gray"><i class="fab fa-linkedin"></i></a>
-            <a href="" target="_blank" class="mx-2 gray"><i class="fab fa-github"></i></a>
-            <a href="" target="_blank" class="mx-2 gray"><i class="fab fa-instagram"></i></a>
-        </div>
-    </footer>
+        <main class="pt-1">
+            <section id="main-section">
 
-
-    <!-- Modal Contact Form -->
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-custom">
-            <div class="modal-content bg-whit-smoke">
-                <div class="modal-header">
-                    <h5 class="modal-title text-uppercase" id="contactModalLabel">Send a mail</h5>
-                    <button type="button" class="btn-close close-button-custom" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- Introduction -->
+                <div id="web-developer-container" class="container-fluid pb-5 m-0">
+                    <div class="d-flex align-items-center flex-wrap flex-md-nowrap">
+                        <span id="web-text" class="text-uppercase bebas-neue-big">web</span>
+                        <img src="css/multimedia/img/web-developer.png" 
+                            alt="Web developer" 
+                            class="img-fluid"
+                            id="web-image">
+                    </div>
+                    
+                    <span id="developer-text" class="text-uppercase bebas-neue-big">developer</span>
                 </div>
-                <div class="modal-body">
-                    <!-- Formulario que usará Formspree -->
-                    <form id="contactForm">
-                        <div class="mb-3">
-                            <label for="name" class="form-label text-uppercase">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
+
+                <!-- Sections -->
+                <div id="sections-container" class="container-fluid px-0 mx-0">
+                    <div class="border-gray-left d-flex align-items-center justify-content-end" >
+                        <a id="projects-link" class="bebas-neue-mid py-5 gray" href="#projects-section" data-scroll>projects</a>
+                    </div>
+                    <div class="border-gray-right d-flex align-items-center justify-content-start">
+                        <a id="curriculum-link" class="bebas-neue-mid py-5 gray" href="curriculum.pdf" target="_blank" data-scroll>curriculum</a>
+                    </div>
+                    <div class="border-gray-left d-flex align-items-center justify-content-end">
+                        <a id="about-me-link" class="bebas-neue-mid py-5 gray" href="p" data-scroll>about me</a>
+                    </div>
+                </div>
+            </section>
+            <section id="projects-section">
+
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="py-3 text-center">
+            <p class="mb-0 d-inline-block">&copy; 2025 Roberto Pecurto</p>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons d-inline-block ms-3">
+                <a href="" target="_blank" class="mx-2 gray"><i class="fab fa-twitter"></i></a>
+                <a href="" target="_blank" class="mx-2 gray"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/RobertoPecurto" target="_blank" class="mx-2 gray"><i class="fab fa-github"></i></a>
+                <a href="" target="_blank" class="mx-2 gray"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+
+
+        <!-- Modal Contact Form -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-custom">
+                <div class="modal-content bg-whit-smoke">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-uppercase" id="contactModalLabel">Send a mail</h5>
+                        <button type="button" class="btn-close close-button-custom" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Formulario que usará Formspree -->
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label text-uppercase">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-uppercase">E-mail</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label text-uppercase">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn modal-button text-uppercase">Send</button>
+                            <button type="reset" class="btn modal-button text-uppercase">Reset</button>
+                        </form>
+
+                        <!-- Mensaje de respuesta -->
+                        <div id="responseMessage" class="mt-4" style="display:none;">
+                            <p class="alert alert-success">Thanks for contacting us! We have received your message.</p>
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label text-uppercase">E-mail</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label text-uppercase">Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn modal-button text-uppercase">Send</button>
-                        <button type="reset" class="btn modal-button text-uppercase">Reset</button>
-                    </form>
-
-                    <!-- Mensaje de respuesta -->
-                    <div id="responseMessage" class="mt-4" style="display:none;">
-                        <p class="alert alert-success">Thanks for contacting us! We have received your message.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-</body>
+    <!-- Locomotive Scroll JS -->
+    <script src="scripts/locomotive-scroll.min.js" defer></script>
+
+    <!-- Custom JS -->
+    <script src="scripts/main.js" defer></script>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script></body>
 
 </html>
