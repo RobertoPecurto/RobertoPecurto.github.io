@@ -95,15 +95,9 @@
 /* Main content */
 
     html {
-        overflow: hidden;
-        scrollbar-width: none;
+        overflow: auto;
+        scrollbar-width: thin;
     }
-
-    html::-webkit-scrollbar {
-        display: none;
-    }
-
-
 
     /* Header */
 
@@ -115,16 +109,15 @@
 
             #contact-button {
                 border: 2px solid #777777;
-                box-sizing: border-box;  /* Esto incluye el borde dentro del tamaño del botón */
+                box-sizing: border-box;
             }
 
             #contact-button:hover {
-                background-color: #FF5500;
-                border-color: #FF5500;
+                background-color: #777777;
+                border-color: #777777;
                 color: #1B1B1B;
             }
 
-            /* From Uiverse.io by mobinkakei */ 
             .btn {
                 width: 100px;
                 height: 35px;
@@ -166,7 +159,7 @@
 
     body {
         height: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     #web-developer-container {
@@ -218,6 +211,16 @@
         will-change: transform;
     }
 
+    /* Projects Carousel */
+
+        #projectsCarousel img {
+            width: 100%;        /* Asegura que las imágenes ocupen el 100% del ancho del contenedor */
+            height: auto;       /* Mantiene la proporción al ajustar la altura automáticamente */
+            max-height: 300px;  /* Evita que las imágenes se estiren demasiado */
+            object-fit: cover;  /* Cubre el área del contenedor sin distorsionar la imagen */
+        }
+            
+
         /* Modal Contact Form */
 
         .modal-custom {
@@ -231,7 +234,7 @@
 
         #contactForm input:focus, 
         #contactForm textarea:focus {
-            border-color: #777777; /* Color del borde al seleccionar */
+            border-color: #777777;
             outline: none;
             box-shadow: 0 0 10px #777777;
             transition: all 0.3s ease-in-out;
@@ -289,6 +292,11 @@
 
         /* Mobile phones */
         @media (max-width: 576px) {
+
+            html {
+                scroll-behavior: smooth;
+            }
+            
             .modal-custom {
                 max-width: 375px;
                 width: 100%;
@@ -300,15 +308,15 @@
             }
         
             #web-text {
-                order: 1; /* Mantiene el texto arriba */
+                order: 1;
             }
         
             #web-image {
-                order: 2; /* Mueve la imagen al final */
-                margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
-                margin-top: 15px; /* Agrega un espacio entre el texto y la imagen */
+                order: 2;
+                margin-left: 0;
+                margin-top: 15px;
                 height: auto;
-                width: 35vw; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+                width: 35vw;
             }
         
             #developer-text {
@@ -324,19 +332,19 @@
             }
         
             #web-text {
-                order: 1; /* Mantiene el texto arriba */
+                order: 1;
             }
         
             #web-image {
-                order: 2; /* Mueve la imagen al final */
-                margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
-                margin-top: 15px; /* Agrega un espacio entre el texto y la imagen */
+                order: 2;
+                margin-left: 0;
+                margin-top: 15px;
                 height: auto;
-                width: 35vw; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+                width: 35vw;
             }
         
             #developer-text {
-                order: 3; /* Mantiene "developer" debajo de la imagen */
+                order: 3;
             }
         }
 

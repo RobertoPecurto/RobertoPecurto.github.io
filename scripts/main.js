@@ -25,39 +25,42 @@ $(document).ready(function() {
         }, 300);
     });
 
-    // Initializes smooth scroll with Locomotive Scroll (Plugin)
-    if (typeof LocomotiveScroll !== "undefined") {
-        const scrollContainer = document.querySelector("body");
+    // Smooth scroll behavior on click
+    $("a").on("click", function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800);
+        }
+    });
+
+    // Horizontal movement for the links
+    $(window).on("scroll", function() {
+        var scrollPosition = $(window).scrollTop();
         
-        const locoScroll = new LocomotiveScroll({
-            el: scrollContainer,
-            smooth: true,
-            multiplier: 0.4,
-            touchMultiplier: 0.4,
-        });
+        const moveAmount = scrollPosition * 0.2;
+        $("#projects-link").css("transform", "translateX(" + (100 - moveAmount) + "%)");
+        $("#curriculum-link").css("transform", "translateX(" + (moveAmount - 100) + "%)");
 
-        // Horizontal movement for the links
-        locoScroll.on("scroll", (event) => {
-            const scrollPosition = event.scroll.y;
-            
-            const moveAmount = scrollPosition * 0.3;
+        const delayOffset = 50;
+        $("#about-me-link").css("transform", "translateX(" + (100 - (moveAmount - delayOffset)) + "%)");
+    });
 
-            $("#projects-link").css("transform", "translateX(" + (100 - moveAmount) + "%)");
+    $('#projectsCarousel').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        dots: true
+    });
 
-
-            $("#curriculum-link").css("transform", "translateX(" + (moveAmount - 100) + "%)");
-
-            const delayOffset = 50;
-            $("#about-me-link").css("transform", "translateX(" + (100 - (moveAmount - delayOffset)) + "%)");
-
-        });
-
-        console.log("Locomotive Scroll inicializado correctamente.");
-    } else {
-        console.error("Error: Locomotive Scroll no está definido.");
-    }
-
-    // Focus on the name when open
+    // Focus on the name when modal is opened
     $('#contactModal').on('shown.bs.modal', function () {
         $('#name').focus();
     });
@@ -77,7 +80,7 @@ $(document).ready(function() {
             $("#name").focus();
         }
 
-        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        const emailPattern = /^[^@.\s][^@\s]*[^@.\s]@[a-zA-Z0-9.]+\.[a-zA-Z]{2,}$/;
         if (!emailPattern.test(email)) {
             isValid = false;
             alert("Please enter a valid email address.");
@@ -107,9 +110,8 @@ $(document).ready(function() {
                 error: function(jqXHR, textStatus, errorThrown) {
                     $("#responseMessage").html("<p class='alert alert-danger'>There was an error sending your message. Please try again later.</p>").show();
                 }
-            })
+            });
         }
-
     });
 
     // Border animation
@@ -140,5 +142,4 @@ $(document).ready(function() {
         $(this).css("position", "relative").append(border);
         border.animate({ right: "0" }, 2000);
     });
-
 });
