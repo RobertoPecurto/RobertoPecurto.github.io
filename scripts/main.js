@@ -59,6 +59,7 @@ $(document).ready(function() {
         arrows: true,
         dots: true
     });
+    
 
     // Focus on the name when modal is opened
     $('#contactModal').on('shown.bs.modal', function () {

@@ -216,7 +216,7 @@
         #projectsCarousel img {
             width: 100%;        /* Asegura que las imágenes ocupen el 100% del ancho del contenedor */
             height: auto;       /* Mantiene la proporción al ajustar la altura automáticamente */
-            max-height: 300px;  /* Evita que las imágenes se estiren demasiado */
+            max-height: 500px;  /* Evita que las imágenes se estiren demasiado */
             object-fit: cover;  /* Cubre el área del contenedor sin distorsionar la imagen */
         }
             
@@ -346,11 +346,14 @@
             #developer-text {
                 order: 3;
             }
+            
+
+            
         }
 
         /* Horizontal tablets or laptops */
         @media (min-width: 769px) and (max-width: 992px) {
-            
+          
         }
 
         /* Desktops */
